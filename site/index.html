@@ -1,9 +1,248 @@
 <!DOCTYPE html>
-<html>
+<!-- hello HTML -->
+<html lang="en">
+
 <head>
-    <title>Hello Coursera</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorials,html">
+    <meta name="robot" content="INDEX FOLLOW">
+    <!--adding css file
+        <link rel="stylesheet" href="_.css"> -->
+    <!--adding js file  
+    <script src="-.js"></script>
+    -->
+    <title>HTML tutorials</title>
 </head>
+
 <body>
-    <h1>Hi! Coursera! It's a great course!</h1>
+    <h1>Sidd</h1>
+    <h2>Sidd</h2>
+    <h3>Sidd</h3>
+    <h4>Sidd</h4>
+    <h5>Sidd</h5>
+    <h6>Sidd</h6>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo quod numquam beatae id veniam
+        impedit commodi sequi quia. Quisquam <strong>aspernatur assumenda </strong> alias numquam ipsum voluptatem
+        inventore aut id magni vel <em>porro ipsa </em> possimus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, vitae adipisci  quae voluptatibus quasi quo
+        quaerat
+        nobis. Qui quibusdam, quam inventore ex dolores iusto. paragraph writen in &lt;p&gt; empty char here &#8203</p> -->
+    <!-- <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the&nbsp;World&nbsp;Wildlife&nbsp;Fund.&nbsp;WWF&nbsp;was&nbsp;founded&nbsp;in&nbsp;1961.</p>
+    </section> -->
+
+    <!-- semantic tags -->
+    <!-- <header>
+        header element - Some header information goes here. Usually consists of company logo, some tag line, etc. Sometimes, navigation is contained in the header as well.
+        <nav>nav (short for navigation) element - Usually contains links to different parts of the web site.</nav>
+      </header>
+      <h1>Main Heading of the Page (hard not to have it)</h1>
+      <section>
+        Section 1
+        <article>Article 1</article>
+        <article>Article 2</article>
+        <article>Article 3</article>
+      </section>
+      <section>
+        Section 2
+        <article>Article 4</article>
+        <article>Article 5</article>
+        <article>Article 6</article>
+        <div>Regular DIV element</div>
+      </section>
+      <aside>
+        ASIDE - Some information that relates to the main topic, i.e., related posts.
+      </aside>
+    
+      <footer>
+        JHU Copyright 2015
+      </footer> -->
+
+    <ul type="circle">
+        <li>First element of unordered list</li>
+        <li>Second element of unordered list</li>
+        <li>Third element of unordered list</li>
+    </ul>
+    <ol type="I">
+        <li>First element of ordered list</li>
+        <li>Second element of ordered list</li>
+        <ul>
+            <li>First element of unordered list</li>
+            <li>Second element of unordered list</li>
+            <li>Third element of unordered list</li>
+        </ul>
+        <li>Third element of ordered list</li>
+    </ol>
+    <!-- <p>second line <br> paragraph 2 </p>
+    <p>third</p>
+    <p> fourth </p>
+    <p> five<hr> </p> -->
+    <!-- to get multiple same tags write tag*no of tags  -->
+    <!-- ctrl+enter to jump to new line  -->
+    <a href="https://google.com" target="_blank">Go to Google </a>
+    <!-- <a href="/filname.html" target="_blank">internal page</a> -->
+    <br>
+    <!-- <img src="C:\Users\siddh\OneDrive\Desktop" alt="Sumurai image" width="400" height="400"> -->
+    <!-- <img src="https://source.unsplash.com/400x400/?nature" alt="photo" width="400" height="400"> -->
+    <h3>Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>id</th>
+                <th>job</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>harry</td>
+                <td>24</td>
+                <td>software developer</td>
+            </tr>
+            <tr>
+                <td>sidd</td>
+                <td>452</td>
+                <td>data analyst</td>
+            </tr>
+            <tr>
+                <td>tom</td>
+                <td>2469</td>
+                <td>frontend expert</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Password:<input type="password" name="myPassword">
+        </div>
+        <br>
+        <div>
+            Are you eligible ? <input type="checkbox" name="myEligiblity" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Salary: <input type="number" name="mySalary">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="swf" selected>Swift</option>
+                <option value="jz">Jazz</option>
+                <option value="hmr">Hummer</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div>
+        <br>
+        <div>
+            Write about your self: <textarea name="myDescrip" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- <div id="mainBox" class="redBg blackBorder">
+            this is mainbox
+        </div>
+        <span class="redBg"></span> -->
+        <!-- Select and press ctrl + / to comment -->
+        <!-- Emmet -->
+        <!-- . is for class and # is for id -->
+        <!-- <span class="redBg"></span>
+        <span id="mainSpan"></span>
+        <div class="redBg blackBorder anotherClass"></div> -->
+
+        <!-- Emmet takes div tag as default -->
+        <!-- <div class="blackBackground"></div> -->
+
+        <!-- Creating multiple elements using Emmet -->
+        <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using Emmet -->
+        <!-- <span class="myClass myClass2 myClass3">First</span>
+        <span class="myClass myClass2 myClass3">Second</span>
+        <span class="myClass myClass2 myClass3">Third</span>
+        <span class="myClass myClass2 myClass3">Fourth</span> -->
+
+        <!-- self linking -->
+        <h1 id="top">Links to Sections of The Same Page</h1>
+        <section>
+            <ul>
+                <!-- Link to every section in the page -->
+                <li><a href="#section1">#section1</a></li>
+                <li><a href="#section2">#section2</a></li>
+                <li><a href="#section3">#section3</a></li>
+                <li><a href="#section4">#section4</a></li>
+                <li><a href="#section5">#section5</a></li>
+                <li><a href="#section6">#section6</a></li>
+            </ul>
+
+        </section>
+
+        <section id="section1">
+            <h3>(#section1) Section 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum repudiandae nisi eligendi dicta inventore
+                iure sunt veritatis harum placeat, non necessitatibus quisquam doloremque deserunt consectetur incidunt
+                blanditiis ab in unde?</p>
+        </section>
+
+        <section id="section2">
+            <h3>(#section2) Section 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut assumenda animi, mollitia blanditiis dolor
+                minima illo laboriosam fugit enim porro repudiandae quibusdam sunt, labore aliquam natus doloremque
+                illum quaerat. Eius?.</p>
+        </section>
+        <section id="section3">
+            <h3>(#section3) Section 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione libero dolores non illo in
+                modi dicta, ad maiores quisquam laborum, eius illum ut! Nemo tenetur porro quidem? Nemo, error!</p>
+        </section>
+        <section id="section4">
+            <h2>(#section4) Section 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima hic obcaecati necessitatibus, maiores
+                odit nesciunt pariatur voluptatum. Deleniti beatae est enim vero minus, delectus incidunt voluptate!
+                Fugit veniam distinctio asperiores.</p>
+        </section>
+        <section id="section5">
+            <h2>(#section5) Section 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure dolore dolor at recusandae ab
+                asperiores rerum, a, voluptas repudiandae odit quas magnam! Natus, modi molestias. Tempora deserunt vel
+                provident.</p>
+        </section>
+        <div>
+            <h2><a name="section6">(#section6) Section 6</a></h2>
+            <p>
+                Back to top: <a href="#top">Back to Top</a>
+            </p>
+        </div>
+    </form>
 </body>
+
 </html>

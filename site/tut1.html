@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to use font from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <style>
+        /* element selector */
+        p {
+            color: gold;
+            background-color: blueviolet;
+        }
+
+        /* id selector */
+        #redPara {
+            /* color: darkblue; */
+            /* background-color: whitesmoke !important; */
+            /* font from google font */
+            font-family: 'Festive', cursive;
+            font-size: 33px;
+            font-weight: bold;
+            line-height: 1.2em;
+            font-style: italic;
+            width: 200px;
+            text-align: start;
+            opacity: .4;
+        }
+
+        /* class selector */
+        p.bgBlue {
+            color: blue;
+            background-color: yellow;
+            font-size: x-large;
+        }
+
+        /* Grouping selector */
+        span,
+        footer {
+            font-size: small;
+            color: cadetblue;
+            background-color: black;
+
+        }
+
+        section>article {
+            color: green;
+            font-size: 24px;
+        }
+
+        section li {
+            color: green;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="tut1.css"> -->
+</head>
+
+<body>
+    <p style="color: wheat;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor perspiciatis, mollitia,
+        ullam tempora dolorum cum assumenda qui minus voluptatum dolores quae doloremque. Quasi cumque nulla distinctio
+        officiis laborum nam! Dignissimos?</p>
+    <p class="bgBlue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta suscipit eos molestias ducimus
+        delectus quia eius fugiat debitis voluptatum deleniti a minus nesciunt reiciendis id alias, dignissimos error
+        nobis dolorum?</p>
+    <p class="bgBlue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda qui tempora iste error numquam
+        blanditiis magnam, voluptas, est dicta deleniti sunt pariatur dolorem corporis. Asperiores molestias ipsum ipsam
+        quisquam! Minus?</p>
+    <div class="bgBlue">
+        div text
+        <p id="redPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere facilis officiis, sed quo,
+            voluptate vero veritatis nihil maxime inventore sint corrupti corporis delectus laudantium minus nesciunt
+            impedit debitis recusandae. Eligendi.</p>
+        <span> span tag</span>
+    </div>
+
+    <section>
+        <h2>Subheading 1</h2>
+        <div>
+            <article>ARTICLE which inside DIV, which is inside SECTION</article>
+        </div>
+    </section>
+    <section>
+        <article>ARTICLE as a direct child of the SECTION element.</article>
+    </section>
+    <h2>Subheading 2</h2>
+    <section>
+        Table of contents:
+        <ul>
+          <li>Article 1</li>
+          <li>Article 2</li>
+          <li>Article 3</li>
+        </ul>
+      </section>
+      <article>
+        Shopping List:
+        <ul>
+          <li>Cookies</li>
+          <li>Cake</li>
+          <li>Pie</li>
+        </ul>
+      </article>
+
+    <footer>this is footer</footer>
+</body>
+
+</html>
