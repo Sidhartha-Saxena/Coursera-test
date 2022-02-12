@@ -5,9 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(243, 156, 239);
+        }
+
+        #firstPara{
+            background-color: aqua;
+            /* height: 50px;
+            width: 400px; */
+            /* border: 4px solid black; */
+            border-width: 4px;
+            border-color: black;
+            border-style: dashed;
+            border-radius: 4px;
+
+        }
+        #secondPara{
+            background-color: aqua;
+
+            border-top: 2px solid green;
+            border-bottom: 3px groove red;
+            border-left: 4px dashed blue;
+            border-right: 5px dotted black;
+            border-top-right-radius: 15px ;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 23px;
+            border-bottom-right-radius: 27px;
+        }
+        #thirdPara{
+            color: black;
+            background-color: aqua;
+
+            background-image: url('https://www.apple.com/v/apple-watch-series-7/c/images/overview/fitness-plus/logo_fitness_plus__d7sy339a0nki_large.png');
+            background-repeat: no-repeat; 
+            border: 4px solid black;
+            /*can be repeated in x or y direction with x-repeat and y repeat */
+            background-position: center center;
+        }
+        .container{
+            /* We can set margin/padding for  top, bottom, left and right like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 34px; 
+            padding-right: 79px;*/
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right:5px ; */
+
+            /* margin = top right bottom left;  */
+            /* padding = top right bottom left;  */
+
+            /* padding: 23px 56px 6px 78px;   */
+            /* margin: 23px 56px 6px 78px;   */
+        
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            /* border-radius: 23px; */
+            width: 533px;
+        }
+    </style>
     
 </head>
 <body>
-    
+    <h3>First heading </h3>
+    <p id="firstPara" class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel amet, pariatur labore assumenda ducimus quisquam?
+    </p>
+    <h3>Second Heading</h3>
+    <p id="secondPara" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum voluptatum voluptate qui totam libero?
+    </p>
+    <h3>Third heading </h3>
+    <p id="thirdPara" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis ipsum quia ab, porro eius sequi alias illum at neque, magnam natus aperiam eligendi cumque velit odio. Beatae, dolorem autem?
+    </p>
+
 </body>
 </html>
