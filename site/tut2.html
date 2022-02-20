@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
             margin: 0px;
             padding: 0px;
         }
-        body{
+
+        body {
             background-color: rgb(243, 156, 239);
         }
 
-        #firstPara{
+        #firstPara {
             background-color: aqua;
             /* height: 50px;
             width: 400px; */
@@ -26,29 +28,34 @@
             border-radius: 4px;
 
         }
-        #secondPara{
+
+        #secondPara {
             background-color: aqua;
 
             border-top: 2px solid green;
             border-bottom: 3px groove red;
             border-left: 4px dashed blue;
             border-right: 5px dotted black;
-            border-top-right-radius: 15px ;
+            border-top-right-radius: 15px;
             border-top-left-radius: 8px;
             border-bottom-left-radius: 23px;
             border-bottom-right-radius: 27px;
         }
-        #thirdPara{
+
+        #thirdPara {
             color: black;
             background-color: aqua;
 
             background-image: url('https://www.apple.com/v/apple-watch-series-7/c/images/overview/fitness-plus/logo_fitness_plus__d7sy339a0nki_large.png');
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
             border: 4px solid black;
+            font-size: 130%;
             /*can be repeated in x or y direction with x-repeat and y repeat */
             background-position: center center;
+
         }
-        .container{
+
+        .container {
             /* We can set margin/padding for  top, bottom, left and right like this */
             /* padding-top: 79px;
             padding-bottom: 79px;
@@ -65,7 +72,7 @@
 
             /* padding: 23px 56px 6px 78px;   */
             /* margin: 23px 56px 6px 78px;   */
-        
+
             /* padding: y(top/bottom) x(left/right); */
             /* margin: y(top/bottom) x(left/right); */
             padding: 34px 19px;
@@ -73,19 +80,95 @@
             /* border-radius: 23px; */
             width: 533px;
         }
+
+
+        header li {
+            list-style: none;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            background-color: green;
+            border: 1px solid blue;
+            color: black;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+
+        a:hover,
+        a:active {
+            background-color: red;
+            color: purple;
+        }
+
+        header li:nth-child(3) {
+            font-size: 24px;
+        }
+
+        section div:nth-child(odd) {
+            background-color: gray;
+        }
+
+        section div:nth-child(4):hover {
+            background-color: green;
+            cursor: pointer;
+        }
     </style>
-    
+
 </head>
+
 <body>
     <h3>First heading </h3>
-    <p id="firstPara" class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel amet, pariatur labore assumenda ducimus quisquam?
+    <p id="firstPara" class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel amet, pariatur
+        labore assumenda ducimus quisquam?
     </p>
     <h3>Second Heading</h3>
-    <p id="secondPara" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum voluptatum voluptate qui totam libero?
+    <p id="secondPara" class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum
+        voluptatum voluptate qui totam libero?
     </p>
     <h3>Third heading </h3>
-    <p id="thirdPara" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis ipsum quia ab, porro eius sequi alias illum at neque, magnam natus aperiam eligendi cumque velit odio. Beatae, dolorem autem?
+    <p id="thirdPara" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis ipsum
+        quia ab, porro eius sequi alias illum at neque, magnam natus aperiam eligendi cumque velit odio. Beatae, dolorem
+        autem?
     </p>
 
+
+    <h1>Pseudo Class Selectors</h1>
+
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+            <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+        <div>DIV 5</div>
+        <div>DIV 6</div>
+        <div>DIV 7</div>
+        <div>DIV 8</div>
+        <div>DIV 9</div>
+        <div>DIV 10</div>
+        <div>DIV 11</div>
+        <div>DIV 12</div>
+        <div>DIV 13</div>
+        <div>DIV 14</div>
+        <div>DIV 15</div>
+        <div>DIV 16</div>
+        <div>DIV 17</div>
+        <div>DIV 18</div>
+        <div>DIV 19</div>
+        <div>DIV 20</div>
+    </section>
+
 </body>
+
 </html>
