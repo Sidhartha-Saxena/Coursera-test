@@ -9,63 +9,106 @@
     <style>
         *{
             box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
         }
-        .container{
-            width: 900px; 
-            border: 5px solid rgb(255, 17, 77);
-            background-color: aqua;
-            margin: auto;
+        h1 {
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 1.75em;
         }
         .item{
-            border: 3px solid rgb(64, 61, 187);
-            margin: 10px 4px;
+
             padding: 12px 3px;
             background-color: burlywood;
-        }
-        #fruits{
-            float: right;
-            width: 50%;
-        }
-        #computer{
-            float: left;
-            width: 48%;
-        }
-        #stationary{
-            clear: both;
-            width: 100%;
+            /* background-color: #A52A2A; */
+            width: 90%;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: Helvetica;
+            color: white;
+            border-radius: 10px;
         }
         p{
             font-size: 100%;
             font-style: italic ; 
             font-family:Poppins;
             text-align: justify;
+
         }
-        h1,h3{
-            text-align: center;
+        h3{
+            text-align: right;
+            border: 1px solid black;
+            position: relative;
+            top: 0px;
+            right: 0px;
             /* font-family: 'Abril Fatface', serif; */
             /* font-size: xx-large; */
             /* font:font-style font-variant font-weight font-size/line-height font-family */
             /* font: italic small-caps bold 12px/30px Georgia, serif; */
             font: italic small-caps bold 30px Georgia, serif;
             margin: 10px auto;
+
         }
+
+        .row {
+          width: 100%;
+        }
+        
+        /********** Large devices only **********/
+        @media (min-width: 992px) {
+           .col-lg-4{
+            float: left;
+            
+          }
+          .col-lg-4 {
+            width: 33.33%;
+          }
+          }
+        
+        
+        /********** Medium devices only **********/
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-md-1 , .col-md-6{
+            float: left;
+          }
+          .paraFull {
+          width: 95%;
+        }
+          .col-md-1 {
+            width: 100%;
+
+          }
+          .col-md-6 {
+            width: 50%;
+          }
+
+        }
+
+        @media (max-width:767px){
+            
+        }
+        
     </style>
 </head>
 <body>
+    <h1>Welcome to the page</h1>
     <div class="container">
-        <h1>Welcome to the page</h1>
-        <div id="fruits" class="item">
-            <h3>Fruits</h3>
-            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem repellendus dolores cum amet! Cumque, doloremque eius ab necessitatibus odit inventore ut, iure tempore maiores accusantium excepturi adipisci repellendus. Eaque suscipit hic obcaecati perspiciatis nostrum, quas dolorem ipsam quasi aliquid?</p>
+        
+        <div class="row">
+        <div id="chicken" class="item col-lg-4 col-md-6">
+            <h3>Chicken</h3>
+            <p id="chickenpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem repellendus dolores cum amet! Cumque, doloremque eius ab necessitatibus odit inventore ut, iure tempore maiores accusantium excepturi adipisci repellendus. Eaque suscipit hic obcaecati perspiciatis nostrum, quas dolorem ipsam quasi aliquid?</p>
         </div>
-        <div id="computer" class="item">
-            <h3>Computer</h3>
-            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem repellendus dolores cum amet! Cumque, doloremque eius ab necessitatibus odit inventore ut, iure tempore maiores accusantium excepturi adipisci repellendus. Eaque suscipit hic obcaecati perspiciatis nostrum, quas dolorem ipsam quasi aliquid?</p>
+        <div id="beef" class="item col-lg-4 col-md-6">
+            <h3>beef</h3>
+            <p id="beefpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem repellendus dolores cum amet! Cumque, doloremque eius ab necessitatibus odit inventore ut, iure tempore maiores accusantium excepturi adipisci repellendus. Eaque suscipit hic obcaecati perspiciatis nostrum, quas dolorem ipsam quasi aliquid?</p>
         </div>
-        <div id="stationary" class="item">
-            <h3>Stationary</h3>
-            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem repellendus dolores cum amet! Cumque, doloremque eius ab necessitatibus odit inventore ut, iure tempore maiores accusantium excepturi adipisci repellendus. Eaque suscipit hic obcaecati perspiciatis nostrum, quas dolorem ipsam quasi aliquid?</p>
-    
+        <div id="sushi" class="item col-lg-4 col-md-1">
+            <h3>Sushi</h3>
+            <p id="sushipara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem repellendus dolores cum amet! Cumque, doloremque eius ab necessitatibus odit inventore ut, iure tempore maiores accusantium excepturi adipisci repellendus. Eaque suscipit hic obcaecati perspiciatis nostrum, quas dolorem ipsam quasi aliquid?</p>
+        </div>
     </div>
     
 </body>
