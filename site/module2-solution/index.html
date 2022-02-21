@@ -5,117 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        /********** Base styles **********/
-        * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-        h1 {
-          margin-bottom: 15px;
-          margin-top: 15px;
-          text-align: center;
-          font-size: 1.75em;
-        }
-        
-        .para{
-          border: 1px solid black;
-          background-color: #A52A2A;
-          position: relative;
-          width: 90%;
-          height: 150px;
-          margin: 20px;
-          font-family: Helvetica;
-          color: white;
-          float: none;
-          border-radius: 10px;
-          text-align: justify;
-          padding: 5px;
-        }
-
-        h3 {
-            /* padding-bottom: 5px;
-            padding-top: 5px; */
-            position: absolute;
-            top:0px;
-            right: 0px;
-            border: 1px solid black;
-            border-top-right-radius: 10px;
-            font-size: 1.25em;
-            color: black;
-            width: 150px;
-            height: 25px;
-            text-align: center;
-            
-        }
-        #sushi{
-            background-color: rgb(112, 255, 112);
-        }
-        #beef{
-            background-color: lightsalmon;
-        }
-
-        #chicken{
-            background-color: aqua;
-        }
-        p{
-            position: absolute;
-            top: 40px;
-        }
-        
-        /* Simple Responsive Framework. */
-        .row {
-          width: 100%;
-        }
-        
-        /********** Large devices only **********/
-        @media (min-width: 992px) {
-           .col-lg-4{
-            float: left;
-            width: 33.33%;
-
-            margin: auto;
-          }
-          }
-        
-        
-        /********** Medium devices only **********/
-        @media (min-width: 768px) and (max-width: 991px) {
-            .col-md-1 , .col-md-6{
-            float: left;
-            margin: auto;
-            width: 100%;
-          }
-          #paraFull {
-          width: 95%;
-        }
-          .col-md-1 {
-            width: 100%;
-
-          }
-          .col-md-6 {
-            width: 50%;
-          }
-
-        }
-
-        @media (max-width:767px){
-            .col-xs-1{
-                width: 100%;
-            }
-        }
-        
-
-        </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <h1>Our Menu</h1>
 
 <div class="row">
   <div class="col-lg-4 col-md-6"><div class="para"><h3 id="chicken">Chicken</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit et non quia corporis dolorum? Hic doloribus reiciendis culpa iste! Minus sunt numquam ad neque ea distinctio commodi ducimus ipsam praesentium..</p> </div></div>
-  <div class="col-lg-4 col-md-6"><div class="para"><h3 id="beef">Beef</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid dolore illo placeat soluta voluptate porro nesciunt ex! Tempora distinctio quasi porro, quisquam voluptates quibusdam repellendus! Nihil aspernatur odio similique.</p></div></div>
+  <div class="col-lg-4 col-md-6"><div class="para"><h3 id="beef">Beef</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aliquid dolore illo placeat soluta voluptate porro nesciunt ex! Tempora distinctio quasi porro, quisquam voluptates quibusdam repellendus!</p></div></div>
   <div class="col-lg-4 col-md-1"><div id="paraFull" class="para"><h3 id="sushi">Sushi</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio et, at iusto autem ipsa possimus mollitia, eum ea quae ullam alias! Deleniti a aperiam culpa, eveniet ducimus laboriosam veritatis?</p></div></div>
 </div>
     
