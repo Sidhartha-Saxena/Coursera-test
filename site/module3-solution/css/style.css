@@ -7,6 +7,13 @@ background-color: #FAD02C;
 border-radius: 0;
 border: 0;
 }
+#heading{
+    color: #90ADC6;
+}
+#brandname{
+    padding-top:0px;
+}
+
 .navbar-brand h1 { /* Restaurant name */
 font-family: 'Lora', serif;
 color: #E9EAEC;
@@ -54,5 +61,10 @@ h3{
         margin-bottom: 0;
         line-height: .5;
         }
+}
+@media (min-width:767px) {
+    #navButton{
+        visibility: hidden;
+    }
 }
 
