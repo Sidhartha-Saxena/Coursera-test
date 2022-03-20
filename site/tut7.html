@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        :root{
+            --box-color: black;
+            --font-color: white;
+            --shadow-color: rgb(170, 170, 170);
+        }
+        body{
+            background-color: var(--box-color);
+            color: var(--font-color);
+            margin: 0px;
+            padding: 0px;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            position: absolute;
+            opacity: .5;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            margin: 10px 0px;
+            padding: 0px;
+        }
+        li{
+            padding: 18px 18px;
+            margin: 5px;
+            box-shadow: 1px 1px 3px 2px var(--shadow-color);
+            transition: all .5s ease-in-out;
+        }
+        .container{
+            width: 500px;
+            margin: auto;
+            align-items: center;
+            justify-items: center;
+            transition: all .5s ease-in-out;
+        }
+        .container:hover{
+            transform: scale(1.5);
+            /* transform: rotate(45deg);
+            transform: skew(-25deg);
+            transform: translate(123px); */
+        }
+        h1{
+            text-align: center;
+            text-shadow: 1px 1px 4px wheat;
+            /* box-shadow: -1px -1px 5px var(--shadow-color); */
+        }
+        .container > p{
+            text-align: justify;
+        }
+        li:hover{
+            background-color: rgb(151, 151, 151);
+        }
+
+    .box {
+        position: relative;
+        text-align: center;
+        /* animation-name: harry1; */
+        animation-name: harry1;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: alternate; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse;  */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+
+    }
+
+    @keyframes harry2 {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top:200px;
+            left:200px;
+        }
+        50%{
+            top:0px;
+            left:0px;    
+        }
+        75%{
+            top:200px;
+            left:-200px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+        
+    }
+    @keyframes harry1 {
+        from {
+            width: 100px;
+        }
+
+        to {
+            width: 1000px;
+        }
+    }
+    .grid{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+        grid-template-areas: 
+        'item1 item1 item1 item1'
+        'item2 item2 item3 item3'
+        'item4 item4 item4 item4';
+
+    }
+    .item{
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px;
+    }
+    #item1{
+        grid-area: item1;
+    }
+    #item2{
+        grid-area: item2;
+    }
+    #item3{
+        grid-area: item3;
+    }
+    #item4{
+        grid-area: item4;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome to Groffers</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum, accusamus repudiandae nihil asperiores magnam ad consectetur cumque quam nam perferendis laborum reiciendis vero, obcaecati animi debitis hic unde excepturi.</p>
+        <div class="box">*</div>
+    </div>
+    <div class="grid">
+    <div id="item1" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae rem saepe impedit odio dolorum non optio iusto libero ipsa facere asperiores quos, omnis minus nemo nulla totam doloribus consequatur!</div>
+    <div id="item2" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae rem saepe impedit odio dolorum non optio iusto libero ipsa facere asperiores quos, omnis minus nemo nulla totam doloribus consequatur!</div>
+    <div id="item3" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae rem saepe impedit odio dolorum non optio iusto libero ipsa facere asperiores quos, omnis minus nemo nulla totam doloribus consequatur!</div>
+    <div id="item4" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae rem saepe impedit odio dolorum non optio iusto libero ipsa facere asperiores quos, omnis minus nemo nulla totam doloribus consequatur!</div>
+    </div>
+</body>
+</html>

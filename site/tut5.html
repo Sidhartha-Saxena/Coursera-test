@@ -210,6 +210,46 @@
                 width: 100%;
             }
         }
+        .container{
+            display: flex;
+            border: 2px solid black;
+            height: 600px;
+            overflow: hidden;
+            /* flex-direction: row-reverse; */
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* justify-content: end; */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* justify-content: space-around;*/
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+            /* flex-flow: row-reverse wrap; */
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+        }
+        #item-1{
+            flex-grow: 3;
+            flex-shrink: 2;
+        }
+        #item-2{
+            flex-basis: 260px;
+        }
+        #item-3{
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
 
     </style>
 </head>
@@ -235,6 +275,14 @@
                 repellendus doloribus iure id inventore voluptas, sunt facere rerum fuga consectetur quam! Blanditiis,
                 dolor? Quidem quasi reprehenderit quo alias reiciendis quam, ullam eos eius nobis illum.</p>
         </div>
+    </div>
+    <div class="container">
+        <div class="item" id="item-1"><h2>1</h2></div>
+        <div class="item" id="item-2"><h2>2</h2></div>
+        <div class="item" id="item-3"><h2>3</h2></div>
+        <div class="item" id="item-4"><h2>4</h2></div>
+        <div class="item" id="item-5"><h2>5</h2></div>
+        <div class="item" id="item-6"><h2>6</h2></div>
     </div>
 </body>
 

@@ -54,6 +54,30 @@
         section li {
             color: green;
         }
+        /* it means p who's previous sibling is div
+        div + p{
+            background-color: aquamarine;
+        } */
+        /* this will select input element with attribute target set to _blank */
+        /* input[target='_blank']{
+            background-color: tomato;
+        } */
+        /* this will select input tag which is defined with attribute target  */
+        /* input[target]{
+            background-color: tomato;
+        } */
+
+        /* this select odd children of li element */
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+        /* this calculates from n=0 add select respective child */
+        li:nth-child(2n+1){
+            background-color: yellow;
+        }
+        li:nth-child(3n){
+            background-color: rgb(255, 0, 0);
+        }
     </style>
     <!-- <link rel="stylesheet" href="tut1.css"> -->
 </head>
